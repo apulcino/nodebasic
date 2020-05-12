@@ -21,7 +21,7 @@ myRouter.route('/abcd')
 // Nous demandons à l'application d'utiliser notre routeur
 app.use(myRouter);  
 // Démarrer le serveur 
-app.listen(port, function(){
-	console.log("Mon serveur fonctionne sur http://localhost:"+port+"\n"); 
+app.listen(port, '0.0.0.0', function(){
+	console.log("Mon serveur fonctionne sur http://0.0.0.0:"+port+"\n"); 
 });
  
